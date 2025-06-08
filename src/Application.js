@@ -1,7 +1,7 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
-import { Navigation, NavigationLink } from './Navigation';
-import { Page } from './Page';
+import { Navigation, NavigationLink } from "./Navigation";
+import { Page } from "./Page";
 
 function Application() {
   return (
@@ -34,7 +34,15 @@ function Application() {
               }
             />
             <Route path="/notes/:id" element={<Page />} />
-            <Route path="/" element={<p>Select a note.</p>} />
+            <Route
+              path="/"
+              element={
+                <div>
+                  <h2 className="text-2xl font-bold mb-4">Welcome!</h2>
+                  <p>Select a note.</p>
+                </div>
+              }
+            />
           </Routes>
         </section>
       </div>
