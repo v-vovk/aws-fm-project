@@ -9,14 +9,11 @@ function Application() {
   return (
     <main className="h-screen">
       <h1 className="text-3xl font-bold bg-yellow-300 p-4 border-b-2 border-yellow-400">
-        Incredibly Important Thoughts
-      </h1>
-
-      <div className="px-4 py-2">
+        Incredibly Important Thoughts{" "}
         <span className="text-sm bg-gray-200 rounded px-2 py-1">
           ENV from Terraform: {testEnv ?? "not set"}
         </span>
-      </div>
+      </h1>
 
       <div className="grid grid-cols-12 grid-rows-1 gap-4 h-full">
         <Navigation>
